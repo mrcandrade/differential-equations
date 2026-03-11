@@ -1,0 +1,21 @@
+# Virtual environment
+.venv/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Results (generated at runtime)
+results/
+
+# Trained models
+*.pth
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+Thumbs.db
+.DS_Store
