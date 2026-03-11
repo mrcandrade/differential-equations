@@ -304,9 +304,9 @@ The key insight is that neural networks are universal function approximators (Un
 
 **No training data is needed** — the physics itself provides the supervision signal.
 
-The general framework for a differential equation $\mathcal{N}[y](x) = 0$ with conditions $\mathcal{B}[y](x_b) = 0$ is:
+The general framework for a differential equation $\mathcal{N}\lbrack y\rbrack(x) = 0$ with conditions $\mathcal{B}\lbrack y\rbrack(x_b) = 0$ is:
 
-$$\mathcal{L}(\theta) = w_{\text{PDE}} \cdot \underbrace{\frac{1}{N_r}\sum_{i=1}^{N_r} |\mathcal{N}[\hat{y}_\theta](x_i)|^2}_{\text{Residual loss}} + w_{\text{BC}} \cdot \underbrace{\frac{1}{N_b}\sum_{j=1}^{N_b} |\mathcal{B}[\hat{y}_\theta](x_j)|^2}_{\text{Boundary/IC loss}}$$
+$$\mathcal{L}(\theta) = w_{\text{PDE}} \cdot \underbrace{\frac{1}{N_r}\sum_{i=1}^{N_r} \left|\mathcal{N}\lbrack\hat{y}_\theta\rbrack(x_i)\right|^2}_{\text{Residual loss}} + w_{\text{BC}} \cdot \underbrace{\frac{1}{N_b}\sum_{j=1}^{N_b} \left|\mathcal{B}\lbrack\hat{y}_\theta\rbrack(x_j)\right|^2}_{\text{Boundary/IC loss}}$$
 
 where $\{x_i\}$ are **collocation points** distributed in the domain and $\{x_j\}$ are boundary/initial condition points.
 
