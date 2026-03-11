@@ -4,46 +4,6 @@
 
 ---
 
-## Table of Contents
-
-1. [Abstract](#1-abstract)
-2. [Introduction](#2-introduction)
-3. [Mathematical Formulation of the Pursuit Curve](#3-mathematical-formulation-of-the-pursuit-curve)
-   - 3.1 [Problem Statement](#31-problem-statement)
-   - 3.2 [Derivation of the Governing ODE](#32-derivation-of-the-governing-ode)
-   - 3.3 [Analytical Solution](#33-analytical-solution)
-   - 3.4 [Prey Position Recovery](#34-prey-position-recovery)
-4. [Classical Numerical Solution (RK45)](#4-classical-numerical-solution-rk45)
-   - 4.1 [Reduction to a First-Order System](#41-reduction-to-a-first-order-system)
-   - 4.2 [The Runge-Kutta-Fehlberg Method](#42-the-runge-kutta-fehlberg-method)
-   - 4.3 [Implementation Details](#43-implementation-details)
-   - 4.4 [Visualization of the ODE Solution](#44-visualization-of-the-ode-solution)
-5. [Physics-Informed Neural Networks (PINNs)](#5-physics-informed-neural-networks-pinns)
-   - 5.1 [Theoretical Foundation](#51-theoretical-foundation)
-   - 5.2 [Network Architecture](#52-network-architecture)
-   - 5.3 [Loss Function Design](#53-loss-function-design)
-   - 5.4 [Automatic Differentiation](#54-automatic-differentiation)
-   - 5.5 [Training Strategy](#55-training-strategy)
-   - 5.6 [PINN Applied to the Pursuit Curve](#56-pinn-applied-to-the-pursuit-curve)
-   - 5.7 [Visualization of the PINN Solution](#57-visualization-of-the-pinn-solution)
-6. [Comparison: RK45 vs PINN vs Analytical](#6-comparison-rk45-vs-pinn-vs-analytical)
-   - 6.1 [Methodology](#61-methodology)
-   - 6.2 [Metrics](#62-metrics)
-   - 6.3 [Comparative Plots](#63-comparative-plots)
-7. [3D Pursuit Simulator](#7-3d-pursuit-simulator)
-   - 7.1 [Simulation Architecture](#71-simulation-architecture)
-   - 7.2 [Pursuit Strategies](#72-pursuit-strategies)
-   - 7.3 [Prey Maneuvers](#73-prey-maneuvers)
-   - 7.4 [Simulation Engine](#74-simulation-engine)
-   - 7.5 [Acceleration Limiting](#75-acceleration-limiting)
-   - 7.6 [3D Animation System](#76-3d-animation-system)
-   - 7.7 [Metrics Dashboard](#77-metrics-dashboard)
-8. [Project Structure](#8-project-structure)
-9. [Installation and Usage](#9-installation-and-usage)
-10. [Dependencies and Technical Stack](#10-dependencies-and-technical-stack)
-11. [References](#11-references)
-
----
 
 ## 1. Abstract
 
