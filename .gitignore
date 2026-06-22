@@ -1,21 +1,29 @@
-# Virtual environment
+# Virtual environments
 .venv/
+venv/
 
-# Python cache
+# Python caches and bytecode
 __pycache__/
-*.pyc
+*.py[cod]
+*.so
 *.pyo
+*.pyc
 
-# Results (generated at runtime)
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Local environment files
+.env
+
+# Generated outputs
 results/
-
-# Trained models
 *.pth
+*.log
 
-# IDE
+# IDE/editor settings
 .vscode/
 .idea/
 
-# OS
+# OS files
 Thumbs.db
 .DS_Store
