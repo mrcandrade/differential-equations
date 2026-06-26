@@ -1,4 +1,4 @@
-# 🐆 Patagônia 3D — Pumas × Guanacos × Ovelhas
+#  Pumas × Guanacos × Ovelhas
 
 Simulação numérica (método de **Euler**) de uma rede trófica de **1 predador e 2
 presas competidoras** na estepe patagônica, inspirada no artigo
